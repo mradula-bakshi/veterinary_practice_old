@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @vat_doctor.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @vat_doctor.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @vat_doctor.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @vat_doctor.state %>
+</p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @vat_doctor.zip_code %>
+</p>
+
+<p>
+  <strong>School degree:</strong>
+  <%= @vat_doctor.school_degree %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @vat_doctor.experience %>
+</p>
+
+<%= link_to 'Edit', edit_vat_doctor_path(@vat_doctor) %> |
+<%= link_to 'Back', vat_doctors_path %>

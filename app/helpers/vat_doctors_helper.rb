@@ -1,0 +1,2 @@
+module VatDoctorsHelper
+end

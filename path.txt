@@ -1,0 +1,26 @@
+                      Prefix Verb   URI Pattern                                             Controller#Action
+             pet_appoinments GET    /pet_appoinments(.:format)                              pet_appoinments#index
+                             POST   /pet_appoinments(.:format)                              pet_appoinments#create
+          new_pet_appoinment GET    /pet_appoinments/new(.:format)                          pet_appoinments#new
+         edit_pet_appoinment GET    /pet_appoinments/:id/edit(.:format)                     pet_appoinments#edit
+              pet_appoinment GET    /pet_appoinments/:id(.:format)                          pet_appoinments#show
+                             PATCH  /pet_appoinments/:id(.:format)                          pet_appoinments#update
+                             PUT    /pet_appoinments/:id(.:format)                          pet_appoinments#update
+                             DELETE /pet_appoinments/:id(.:format)                          pet_appoinments#destroy
+vat_doctor_show_doctors_list GET    /vat_doctors/:vat_doctor_id/show_doctors_list(.:format) vat_doctors#show_doctors_list
+                 vat_doctors GET    /vat_doctors(.:format)                                  vat_doctors#index
+                             POST   /vat_doctors(.:format)                                  vat_doctors#create
+              new_vat_doctor GET    /vat_doctors/new(.:format)                              vat_doctors#new
+             edit_vat_doctor GET    /vat_doctors/:id/edit(.:format)                         vat_doctors#edit
+                  vat_doctor GET    /vat_doctors/:id(.:format)                              vat_doctors#show
+                             PATCH  /vat_doctors/:id(.:format)                              vat_doctors#update
+                             PUT    /vat_doctors/:id(.:format)                              vat_doctors#update
+                             DELETE /vat_doctors/:id(.:format)                              vat_doctors#destroy
+                       homes GET    /homes(.:format)                                        homes#index
+                             POST   /homes(.:format)                                        homes#create
+                    new_home GET    /homes/new(.:format)                                    homes#new
+                   edit_home GET    /homes/:id/edit(.:format)                               homes#edit
+                        home GET    /homes/:id(.:format)                                    homes#show
+                             PATCH  /homes/:id(.:format)                                    homes#update
+                             PUT    /homes/:id(.:format)                                    homes#update
+                             DELETE /homes/:id(.:format)                                    homes#destroy

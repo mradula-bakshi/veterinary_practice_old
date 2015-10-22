@@ -1,0 +1,41 @@
+<%= form_for(@pet_appoinment) do |f| %>
+  <% if @pet_appoinment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pet_appoinment.errors.count, "error") %> prohibited this pet_appoinment from being saved:</h2>
+
+      <ul>
+      <% @pet_appoinment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :visit_date %><br>
+    <%= f.datetime_select :visit_date %>
+  </div>
+  <div class="field">
+    <%= f.label :pet %><br>
+    <%= f.text_field :pet %>
+  </div>
+  <div class="field">
+    <%= f.label :customer %><br>
+    <%= f.text_field :customer %>
+  </div>
+  <div class="field">
+    <%= f.label :reminder_required %><br>
+    <%= f.check_box :reminder_required %>
+  </div>
+  <div class="field">
+    <%= f.label :reason_to_visit %><br>
+    <%= f.text_field :reason_to_visit %>
+  </div>
+  <div class="field">
+    <%= f.label :vat_doctor_id %><br>
+    <%= f.number_field :vat_doctor_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

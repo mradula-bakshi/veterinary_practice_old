@@ -1,0 +1,35 @@
+<h1>Doctors list for appoinment</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Visit date</th>
+      <th>Pet</th>
+      <th>Customer</th>
+      <th>Reminder required</th>
+      <th>Reason to visit</th>
+      <th>Doctor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pet_appoinments.each do |pet_appoinment| %>
+      <tr>
+        <td><%= pet_appoinment.visit_date.to_time %></td>
+        <td><%= pet_appoinment.pet %></td>
+        <td><%= pet_appoinment.customer %></td>
+        <td><%= pet_appoinment.reminder_required %></td>
+        <td><%= pet_appoinment.reason_to_visit %></td>
+        <td><%= pet_appoinment.vat_doctor.name %></td>
+        <td><%= link_to 'Show', pet_appoinment %></td>
+        <td><%= link_to 'Edit', edit_pet_appoinment_path(pet_appoinment) %></td>
+        <td><%= link_to 'Destroy', pet_appoinment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pet appoinment', new_pet_appoinment_path %>
